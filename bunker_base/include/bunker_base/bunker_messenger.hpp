@@ -189,7 +189,7 @@ class BunkerMessenger {
 
     double d_x = linear_speed * std::cos(theta_) * dt;
     double d_y = linear_speed * std::sin(theta_) * dt;
-    double d_theta = angular_speed * dt;
+    double d_theta = angular_speed * dt * 0.5;
 
     position_x_ += d_x;
     position_y_ += d_y;
